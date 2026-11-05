@@ -1,0 +1,8 @@
+{
+  "name": "Remix WhatsCircle — Private Real-Time Group Chat",
+  "description": "A private, real-time WhatsApp-style group chat web app with no sign-up required, rooms, direct messages, reactions, PWA support, and a protected admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

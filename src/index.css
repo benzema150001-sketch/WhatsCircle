@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar matching WhatsApp style */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(120, 130, 140, 0.28);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(120, 130, 140, 0.45);
+  }
+}
+
+/* Subtle WhatsApp doodle background texture for chat area */
+.whatsapp-chat-bg-light {
+  background-color: #efeae2;
+  background-image: radial-gradient(#d3cabb 0.75px, transparent 0.75px), radial-gradient(#d3cabb 0.75px, #efeae2 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.whatsapp-chat-bg-dark {
+  background-color: #0c1317;
+  background-image: radial-gradient(#182229 0.85px, transparent 0.85px), radial-gradient(#182229 0.85px, #0c1317 0.85px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}

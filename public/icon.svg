@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00a884" />
+      <stop offset="100%" stop-color="#075e54" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Square / Circle Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+
+  <!-- Chat Bubble Group with Subtle Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Main Chat Bubble Body -->
+    <path d="M 256 100 C 160 100 82 170 82 256 C 82 296 98 332 124 360 L 100 424 L 168 402 C 194 416 224 424 256 424 C 352 424 430 354 430 268 C 430 176 352 100 256 100 Z" fill="#ffffff" />
+    
+    <!-- WhatsApp / Circle Inner Icon -->
+    <circle cx="210" cy="256" r="24" fill="#00a884" />
+    <circle cx="270" cy="256" r="24" fill="#075e54" />
+    <circle cx="330" cy="256" r="24" fill="#128c7e" />
+  </g>
+</svg>
